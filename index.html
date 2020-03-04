@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BIAS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link  rel = "stylesheet"  href = "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400i,400,600,700,900,900i|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div id="app">
+        <section class="first">
+            <div class="jarallas_box">
+                <div class="jarallax jarallax1" data-jarallax-video="mp4:./img/Shoes.mp4">
+                    <img class="jarallax1_logo" src="./img/logo_head.png" alt="logo">
+                    <div class="jarallax1_text">
+                        <p>La tecnología de BIAS analiza, integra, procesa y proyecta datos para la <br> creación de estrategias y toma de decisiones dentro de la organización. </p>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </section>
+        <img  class="medium_curve" src="./img/curva.svg" alt="">
+        <section class="second">
+            <div class="slider-container">
+                <ul class="nav" id="secondSectionBias">
+                     <li class="nav-item">
+                        <a class="nav-link " id="motivacion-tab" data-toggle="tab" href="#motivacion" role="tab" aria-controls="motivacion" aria-selected="false">
+                            <div class="cardImg" style="background-image: url(./img/second_one.png)">
+                                <div class="second_text">
+                                    <h1>MOTIVACIÓN</h1>
+                                    <button class="btn">
+                                        <img src="./img/cruz.png" alt="btn">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="proposito-tab" data-toggle="tab" href="#proposito" role="tab" aria-controls="proposito" aria-selected="false">
+                            <div class="cardImg" style="background-image: url(./img/second_two.png)">
+                                <h1>PROPÓSITO</h1>
+                                <button class="btn">
+                                    <img src="./img/cruz.png" alt="btn">
+                                </button>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="especialidad-tab" data-toggle="tab" href="#especialidad" role="tab" aria-controls="especialidad" aria-selected="false"> 
+                            <div class="cardImg" style="background-image: url(./img/second_three.png)">
+                                <h1>ESPECIALIDAD</h1>
+                                <button class="btn">
+                                    <img src="./img/cruz.png" alt="btn">
+                                </button>
+                            </div>
+                        </a>
+                      </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade " id="motivacion" role="tabpanel" aria-labelledby="motivacion-tab">
+                        <p class="purple_text">Creer que la razón de existir del ser humano es dejar huella que perdure en el tiempo.</p>
+                        <p>Trascender a pesar de los fracasos y reflejar con fuerza los logros obtenidos.</p>
+                        <p>Querer que el mundo se entere de lo que estas haciendo y se haga participe de tu sueño.</p>
+                    </div>
+                    <div class="tab-pane fade" id="proposito" role="tabpanel" aria-labelledby="proposito-tab">
+                        <p class="purple_text">Conectar a quienes estan dejando una huella con las personas que quieran seguirla.</p>
+                        <p>Permitir esta interacción, sin importar la distancia ni las barreras que se interpongan.</p>
+                        <p>Entregar la capacidad de empatizar con los demás y ofrecer consideración, dignidad y respeto.</p>
+                    </div>
+                    <div class="tab-pane fade" id="especialidad" role="tabpanel" aria-labelledby="especialidad-tab">
+                        <p class="purple_text">Desarrollar soluciones digitales que permitan a las empresas entender y llegar a las personas.</p>
+                        <p>Incorporar inteligencia de negocios y herramientas de contactabilidad, para dirigir los esfuerzos <br> hacia la satisfacción del cliente a través de toda su experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third">
+            <div data-jarallax data-speed="0.3" class="jarallax containerThird">
+                <img class="jarallax-img" src="./img/thirdSection.png" alt="">
+                <h1>CUSTOMER <br>EXPERIENCE</h1>
+                <div class="popup" onclick="myFunction()">
+                    <button class="btn btnThird">
+                        <img src="./img/cruz_verde.png" alt="cruz">
+                    </button>
+                    <span class="popuptext" id="myPopup">
+                        <p>Cada cliente vive su propia experiencia durante la <span>interacción</span> con la empresa. <br>Esta experiencia depende de las acciones que desarrolla la empresa para lograr <span>fidelizar</span> a sus clientes y de cómo éstos responden a las acciones.</p><br>
+                        <p>Nosotros permitimos esta interacción en las diferentes etapas de la <span>experiencia del consumidor</span> , a través de diversas soluciones y servicios, facilitando la <span>evolución</span> de un prospecto a un defensor de la empresa.</p>
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="containerThird " style="background-image: url(./img/thirdSection.png)">
+                <h1>CUSTOMER <br>EXPERIENCE</h1>
+                <div class="popup" onclick="myFunction()">
+                    <button class="btn btnThird">
+                        <img src="./img/cruz_verde.png" alt="cruz">
+                    </button>
+                    <span class="popuptext" id="myPopup">
+                        <p>Cada cliente vive su propia experiencia durante la interacción con la empresa. <br>Esta experiencia depende de las acciones que desarrolla la empresa para lograr fidelizar a sus clientes y de cómo éstos responden a las acciones.</p><br>
+                        <p>Nosotros permitimos esta interacción en las diferentes etapas de la experiencia del consumidor, a través de diversas soluciones y servicios, facilitando la evolución de un prospecto a un defensor de la empresa.</p>
+                    </span>
+                </div>
+            </div> -->
+        </section>
+        <section class="fourth">
+            <div class="container_vertical_box light">
+                <div class="btn_purple">
+                    <img src="./img/cruz_red_morada.png" alt="">
+                </div>
+                <div class="container_vertical">
+                    <img class="fourth_left"src="./img/vertical_1.png" alt=""><br>
+                    <img class="prueba fourth_medium_vert" src="./img/vertical_2.png" alt=""><br>
+                    <img class="fourth_rigth" src="./img/vertical_3.png" alt=""><br>
+                </div>
+            </div>
+            <div class="container_horizontal light">
+                <img class="fourth_top" src="./img/horizontal_uno.png" alt="">
+                <img class="fourth_medium" src="./img/horizontal_2.png" alt="">
+                <img class="fourth_bottom" src="./img/horizontal_3.png" alt="">
+            </div>
+            <div class="container_vertical_box dark">
+                <div class="btn_purple">
+                    <img src="./img/cruz_red_morada.png" alt="">
+                </div>
+                <div class="container_vertical">
+                    <img class="fourth_left"src="./img/dark/vertical_uno_dark.png" alt=""><br>
+                    <img class="prueba fourth_medium_vert" src="./img/dark/vertical_dos_dark.png" alt=""><br>
+                    <img class="fourth_rigth" src="./img/dark/vertical_tres_dark.png" alt=""><br>
+                </div>
+            </div>
+            <div class="container_horizontal dark">
+                <img class="fourth_top" src="./img/dark/horizontal_uno_dark.png" alt="">
+                <img class="fourth_medium" src="./img/dark/horizontal_dos_dark.png"  alt="">
+                <img class="fourth_bottom" src="./img/dark/horizontal_tres_dark.png"  alt="">
+            </div>
+        </section>
+        <section class="fifth">
+            <div class="container_fifth">
+                <h1>CONOCE LO QUE PUEDES<br><span>HACER CON BIAS</span></h1>
+                <div class="slider-container">
+                    <ul class="nav" id="fifth_section">
+                        <!-- <li v-for="(item, index) in slider2" class="nav-item">
+                            <a @click.default="test(index)" class="nav-link" :id='item.id' data-toggle="tab" :href='item.href' role="tab" :aria-controls='item.aria' aria-selected="false"> 
+                                <div class="container_icons">
+                                    <div class="icon_options">
+                                        <div class="box_icon box-icon-1">
+                                            <img :src='item.img' alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="icon_options box-icon-2">
+                                        <div class="box_icon">
+                                            <img :src='item.img2' alt="icon">
+                                        </div>
+                                        <div class="text_icon">
+                                            <h2>{{item.text}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="experiencia-tab" data-toggle="tab" href="#experiencia" role="tab" aria-controls="experiencia" aria-selected="false"> 
+                                <div class="container_icons" id="first-element">
+                                    <div class="icon_options box-icon-1">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_three.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="icon_options box-icon-2">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_three_purple.png" alt="icon">
+                                        </div>
+                                        <div class="text_icon">
+                                            <h2>EXPERENCIA</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="interacciones-tab" data-toggle="tab" href="#interacciones" role="tab" aria-controls="interacciones" aria-selected="false">
+                                <div class="container_icons" >
+                                    <div class="icon_options box-icon-1">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_two.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="icon_options box-icon-2">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_two_purple.png" alt="icon">
+                                        </div>
+                                        <div class="text_icon">
+                                            <h2>INTERACCIONES</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="beneficios-tab" data-toggle="tab" href="#beneficios" role="tab" aria-controls="beneficios" aria-selected="false"> 
+                                <div class="container_icons">
+                                    <div class="icon_options box-icon-1">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_four.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="icon_options box-icon-2"> 
+                                        <div class="box_icon">
+                                            <img src="./img/icon_four_purple.png" alt="icon">
+                                        </div>
+                                        <div class="text_icon">
+                                            <h2>BENEFICIOS</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="sobre-tab" data-toggle="tab" href="#sobre" role="tab" aria-controls="sobre" aria-selected="false">
+                                <div class="container_icons">
+                                    <div  class="icon_options box-icon-1">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_one.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="icon_options box-icon-2">
+                                        <div class="box_icon">
+                                            <img src="./img/icon_one_purple.png" alt="icon">
+                                        </div>
+                                        <div class="text_icon">
+                                            <h2>¿CÓMO?</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade " id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+                    <div class="mobile">
+                        <!-- <h1>¿CÓMO?</h1> -->
+                        <div class="mobile_text_Sobre">
+                            <p>A través de una interacción simple, BIAS es capaz de transformar data en conocimiento para que logres comprender a tus clientes, realizar campañas inteligentes y satisfacer sus necesidades reales.</p>
+                        </div>
+                        <div class="mobile_graphic">
+                            <img src="./img/sobre_1.png" alt="sobre">
+                            <img src="./img/sobre_2.png" alt="sobre">
+                            <img src="./img/sobre_3.png" alt="sobre">
+                            <img  class="graphic_center" src="./img/sobre_4.png" alt="sobre">
+                            <img src="./img/sobre_5.png" alt="sobre">
+                            <img src="./img/sobre_6.png" alt="sobre">
+                            <img src="./img/sobre_7.png" alt="sobre">
+                        </div>
+                    </div>
+                    <div class="portrait">
+                        <div class="portrait_sobre">
+                            <div class="small_box">
+                                <!-- <div class="col_left"></div> -->
+                                <p>A través de una interacción simple, BIAS es capaz de transformar data en conocimiento para que logres comprender a tus clientes, realizar campañas inteligentes y satisfacer sus necesidades reales.</p>
+                            </div>
+                            <div class="big_box">
+                                <img src="./img/sobre.png" alt="sobre">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="interacciones" role="tabpanel" aria-labelledby="interacciones-tab">
+                    <div class="mobile">
+                        <div class="mobile_text_Sobre">
+                            <p>Business Intelligence es uno de los 3 pilares que soportan nuestras soluciones, siendo nuestra plataforma BIAS la que interactúa con otros elementos generando un ciclo infinito autosustentable, favoreciendo el conocimiento de los clientes, la comunicación bidireccional precisa y eficiente, y finalmente, la conversión.</p>
+                        </div>
+                        <div class="mobile_graphic">
+                            <img src="./img/interacciones_vertical.png" alt="sobre">
+                        </div>
+                    </div>
+                    <div class="portrait">
+                        <div class="portrait_sobre">
+                            <div class="small_box">
+                                <!-- <div class="col_left"></div> -->
+                                <p>Business Intelligence es uno de los 3 pilares que soportan nuestras soluciones, siendo nuestra plataforma BIAS la que interactúa con otros elementos generando un ciclo infinito autosustentable, favoreciendo el conocimiento de los clientes, la comunicación bidireccional precisa y eficiente, y finalmente, la conversión.</p>
+                            </div>
+                            <div class="big_box">
+                                <img src="./img/interacciones.png" alt="sobre">
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="tab-pane fade show active" id="experiencia" role="tabpanel" aria-labelledby="experiencia-tab">
+                    <div class="mobile">
+                        <div class="mobile_experiencia">
+                            <button type="button" class="btn_experiencia" data-toggle="modal" data-target="#exampleModal">
+                                <div class="experiencia_two">
+                                    <img  src="./img/experiencia_2.png" alt="experiencia">
+                                    <div class="experiencia_show">
+                                        <div class="experiencia_show_box">
+                                            <img src="./img/cruz_verde.png" alt="">
+                                            <h5>VER MÁS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+    
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                    <div class="modal-body">
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                  <div class="carrusel_ghost">
+                                                    <img class="d-block " src="./img/text_1.png" alt="1" >
+                                                  </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carrusel_ghost">
+                                                    <img class="d-block " src="./img/text_2.png" alt="2">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carrusel_ghost">
+                                                    <img class="d-block" src="./img/text_3.png" alt="3">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carrusel_ghost">
+                                                    <img class="d-block" src="./img/text_4.png" alt="4">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carrusel_ghost">
+                                                    <img class="d-block" src="./img/text_5.png" alt="5">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carrusel_ghost">
+                                                    <img class="d-block" src="./img/text_6.png" alt="6">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carrusel_ghost">
+                                                    <img class="d-block" src="./img/text_7.png" alt="7">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Next</span>
+                                            </a>
+                                          </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portrait">
+                        <div class="portrait_experiencia_img">
+                            <img src="./img/experiencia_grande.png" alt="experiencia">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="beneficios" role="tabpanel" aria-labelledby="beneficios-tab">
+                    <div class="mobile">
+                        <div class="benefecios_mobile">
+                            <img src="./img/beneficio_1.png" alt="beneficio">
+                            <img src="./img/beneficio_2.png" alt="beneficio">
+                            <img src="./img/beneficio_3.png" alt="beneficio">
+                            <img src="./img/beneficio_4.png" alt="beneficio">
+                            <img src="./img/beneficio_5.png" alt="beneficio">
+                            <img src="./img/beneficio_6.png" alt="beneficio">
+                            <img src="./img/beneficio_7.png" alt="beneficio">
+                            <img src="./img/beneficio_8.png" alt="beneficio">
+                            <img class="medium_beneficio" src="./img/beneficio_11.png" alt="beneficio">
+                            <img src="./img/beneficio_9.png" alt="beneficio">
+                            <img src="./img/beneficio_10.png" alt="beneficio">
+                        </div>
+                    </div>
+                    <div class="portrait">
+                        <!-- <h1>BENEFICIOS</h1> -->
+                        <div class="benefecios_portrait">
+                            <img src="./img/beneficios.png" alt="beneficios">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="buttom_box">
+                <button class="btn_fifth" @click="next_section()">
+                    <img src="./img/cruz_redondo.png" alt="">
+                    <h3>VER MÁS</h3>
+                </button>
+        </div> -->
+        <section data-jarallax data-speed="0.3" v-show="next" class="sixth jarallax">
+                <img class="jarallax-img" src="./img/fondo_sexto.png" alt="">
+                <div class="container_sixth">
+                    <div class="sixth_head">
+                        <div class="title_six">
+                            <h1>ANÁLISIS, REPORTERÍA <br> Y ACCIÓN </h1>
+                            <h3>PLATAFORMA BIAS</h3>
+                        </div>
+                    </div>
+                    <div class="sixth_cardBox">
+                        <div class="mobile">
+                            <div class="group">
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_1_.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Concilia tus ingresos</h3>
+                                                <p>Los ingresos obtenidos a través del botón de pago de AlteraPay se pueden revisar y conciliar fácilmente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_2_.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Supervisa tu contactabilidad</h3>
+                                                <p>Toda la data resultante de las interacciones con tus clientes, permite realizar acciones eficientes, eficaces y a tiempo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_3_.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Real Time de tus clientes</h3>
+                                                <p>Las interacciones con tus clientes monitoreadas en tiempo real, permiten aprovechar las oportunidades al instante.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_4_.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Revisa el resultado de tus campañas</h3>
+                                                <p>El impacto real de tus campañas, permite conocer a tus clientes, aprender de sus intereses y desarrollar marketing inteligente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portrait">
+                            <div class="group">
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_1.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Concilia tus ingresos</h3>
+                                                <p>Los ingresos obtenidos a través del botón de pago de AlteraPay se pueden revisar y conciliar fácilmente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_2.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Supervisa tu contactabilidad</h3>
+                                                <p>Toda la data resultante de las interacciones con tus clientes, permite realizar acciones eficientes, eficaces y a tiempo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_3.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Real Time de tus clientes</h3>
+                                                <p>Las interacciones con tus clientes monitoreadas en tiempo real, permiten aprovechar las oportunidades al instante.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plataforma_card">
+                                    <div class="card" style="background-image: url(./img/plataforma_4.png)">
+                                        <div class="info">
+                                            <div class="card_text">
+                                                <h3>Revisa el resultado de tus campañas</h3>
+                                                <p>El impacto real de tus campañas, permite conocer a tus clientes, aprender de sus intereses y desarrollar marketing inteligente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="seventh" style="background-color:#4d4d4d">
+            <div class="seventh_container" >
+                <div class="seventh_title">
+                    <h2>¿QUIERES SABER <br> MÁS DE BIAS?</h2> <br>
+                    <P>Nuestros expertos estarán encantados <br> de mostrarte la plataforma y responder <br> a tus preguntas cuando prefieras.</P><br>
+                </div>
+                <div class="form_seventh">
+                    <input class="name" type="text" placeholder="Nombre">
+                    <input class="phone" type="tel" placeholder="Teléfono">
+                    <input class="email" type="text" placeholder="Email">
+                    <textarea class="text_menj" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <div class="btn_seventh_box">
+                        <button class="btn_seventh">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_1">
+                <img class="logo_footer" src="./img/logo_footer.png" alt="logo">
+            </div>
+            <div class="footer_2_1">
+                <div class="icon_footerBox">
+                    <div class="icon_contact">
+                        <img src="./img/carta_verde.png" alt="logo_footer">
+                    </div>
+                    <p> contacto@altera.cl</p>
+                </div>
+                <div class="icon_footerBox_2">
+                    <div class="icon_contact">
+                        <img src="./img/ubicacion_verde.png" alt="logo_footer">
+                    </div>
+                    <p> Armando Carrera  5218, <br>  Ñuñoa, Santiago.</p>
+                </div>
+                <div class="icon_footerBox_2">
+                    <div class="icon_contact">
+                        <img src="./img/tel_verde.png" alt="logo_footer">
+                    </div>
+                    <p> +56 942127465</p>
+                </div>
+            </div>
+    
+            <div class="footer_3">
+                <p><span>SUSCRÍBETE</span></p>
+                <div class="btn_footer">
+                    <input type="text" placeholder="Email">
+                    <button class="btn_footer_2">ok</button>
+                </div>
+            </div>
+            <!-- <div class="footer_4">
+                <p><span>SIGUENOS</span></p>
+                <div class="plataforma_card_footer">
+                    <a href=""><img src="./img/in_.png" alt="icons"></a>
+                    <a href=""><img src="./img/twitter.png" alt="icons"></a>
+                </div>
+            </div> -->
+        </footer>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+<script src="https://unpkg.com/jarallax@1/dist/jarallax-video.min.js"></script>
+<script src="https://unpkg.com/jarallax@1/dist/jarallax-element.min.js"></script>
+<script src="./main.js"></script>
+<script src="./app.js"></script>
+</html>
